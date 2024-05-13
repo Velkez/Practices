@@ -19,5 +19,3 @@ function reverseString() {
   document.getElementById('reverseWord').innerHTML = strInverse
   console.log(strInverse);
 }
-
-alert(reverseString())
