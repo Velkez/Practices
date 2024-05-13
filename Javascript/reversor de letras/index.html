@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reversor de letras</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="w-full h-screen flex flex-col justify-center items-center font-light">
+    <div class="bg-neutral-500 w-[50%] p-[3rem] rounded-2xl shadow-lg">
+      <form action="" class="flex flex-col items-center p-[20px]">
+        <h2 class="w-[60%] text-center text-white text-xl pb-[5px] border-b rounded">REVERSOR DE LETRAS</h2>
+        <input type="text" id="word" class="mt-[2rem] w-[50%] h-10 rounded-full p-5 shadow text-center" placeholder="Escribe una palabra">
+        <input type="button" onclick="reverseString()" value="Reversar" class="mt-[1rem] w-[30%] h-10 bg-black text-white hover:font-bold hover:shadow-lg hover:scale-105 transition cursor-pointer rounded-2xl">
+      </form>
+      <div id="reverseWord" class="text-center text-white text-xl mt-[1rem] border-t pt-[10px] mx-[3rem] mb-[1rem]"></div>
+    </div>
+
+    <p class="text-sm mt-[3rem] border-b border-black px-2 py-1 rounded-lg">Developed by: <a href="https://github.com/Velkez" class="text-purple-700">Velkez</a></p>
+    
+  </div>
+</body>
+</html>
