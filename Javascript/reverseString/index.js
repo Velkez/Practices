@@ -3,7 +3,7 @@
 
 function reverseString() {
   var str = document.getElementById('word').value;
-  //convierto es strign en un array
+  //convierto es string en un array
   let strArray1 = str.split('');
   //array vacio para almacenar el string inverso
   let strArray2 = [];
