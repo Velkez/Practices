@@ -1,0 +1,37 @@
+<!-- Codigo hecho por ELkin Vasquez -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-center text-2xl mt-[2rem] mb-[1rem] font-bold w-[90%] sm:w-full mx-auto">Simulación de sistemas continuos</h1>
+
+  <p class="text-center w-[90%] sm:w-full mx-auto"> Lo siguiente es un ejemplo para demostrar la simulacion de volatilidad de mercado. </p>
+
+  <div class="flex flex-col sm:flex-row">
+    <form id="simulacionForm" class="flex flex-col mt-[2rem] mx-auto w-[20rem]">
+      <label for="precioInicial" class="mt-10">Precio inicial</label>
+      <input type="number" id="precioInicial" placeholder="Inicial del activo" class="border rounded-full text-center py-1 mt-2">
+      <label for="volatilidad" class="mt-10">Volatilidad</label>
+      <input disabled type="number" id="volatilidad" value=0.2 class="border rounded-full text-center py-1 mt-2">
+      <label for="pasos" class="mt-10">Pasos</label>
+      <input type="number" id="pasos" placeholder="Pasos de simulación" class="border rounded-full text-center py-1 mt-2">
+      <button type="button" onclick="simular()" class="mt-[1rem] bg-black w-[10rem] mx-auto rounded-full p-2 text-white font-bold">Simular</button>
+    </form>
+    <div class="flex flex-col mt-[2rem] mx-auto w-[20rem] text-center">
+      <h3 id="enunciado" class="font-bold mb-[10px]"> </h3> <div id="preciosSimulados"></div>
+    </div>
+  
+  </div>
+  <footer class="flex justify-center h-[4rem] items-center">
+    <p>Hecho por <a href="https://github.com/velkez" class="text-purple-600">Velkez</a></p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
