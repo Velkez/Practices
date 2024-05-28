@@ -22,4 +22,4 @@ function simular() {
 
   console.log("Precios simulados del activo financiero:");
   console.log(preciosSimulados);
-}
+} 
