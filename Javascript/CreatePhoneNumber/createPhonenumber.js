@@ -14,6 +14,9 @@ function createPhoneNumber(numbers){
   secondPart = numbers.slice(3, 6).join('');
   //third part of number phone 0000
   thirdPart = numbers.slice(6).join('');
+
+  // give format with string Interpolation
+  let phoneNumber = `(${firstPart}) ${secondPart}-${thirdPart}`;
   
-  return `(${firstPart}) ${secondPart}-${thirdPart}`;
+  return phoneNumber;
 }
