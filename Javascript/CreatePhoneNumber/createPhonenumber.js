@@ -5,8 +5,8 @@
 
 function createPhoneNumber(numbers){
   let firstPart;
-  let secondPart = "";
-  let thirdPart = "";
+  let secondPart;
+  let thirdPart;
   
   //firs part of phone number (000)
   firstPart = numbers.slice(0, 3).join('');
